@@ -39,8 +39,9 @@ module JSONtoSQL
 
   def save
     d = DateTime.now
+    path = File.expand_path('~/Desktop')
     filename = "#{PARSER.opts[:table]}_#{d.strftime('%y%m%d_%H%M%S')}.json"
-    File.open(filename, 'w') do |f|
+    File.open("#{path}/#{filename}", 'w') do |f|
       Sequel.connect(PARSER.opts[:uri]) do |db|
         dataset = db.from(PARSER.opts[:table].to_sym)
         first = true

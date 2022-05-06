@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name                  = 'json_to_sql'
-  s.version               = '0.1.0'
+  s.version               = '0.1.1'
   s.platform              = Gem::Platform::RUBY
   s.summary               = 'copy JSON file into an SQL table and vice-versa'
   s.description           = 'Insert key/values from .json into SQL table where Column name = key, or save table rows into a JSON formatted file'

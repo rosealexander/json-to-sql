@@ -40,7 +40,8 @@ namespace :util do
     begin
       response = Net::HTTP.get(URI(args.url))
       coins = JSON.parse(response)
-      File.open('data.json', 'w') do |f|
+      path = File.expand_path('~/Desktop')
+      File.open("#{path}/data.json", 'w') do |f|
         f.write(JSON.pretty_generate(coins))
       end
       logger.info('Updated data.json')
