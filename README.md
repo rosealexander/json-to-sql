@@ -1,5 +1,5 @@
 ## json_sql
-Copies JSON data into an SQL table and vice-versa.
+Copies JSON data into a SQL table and vice-versa.
 
 ### usage
 - gem install json_to_sql
