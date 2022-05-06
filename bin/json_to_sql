@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'json_to_sql'
+include JSONtoSQL
+JSONtoSQL.run
